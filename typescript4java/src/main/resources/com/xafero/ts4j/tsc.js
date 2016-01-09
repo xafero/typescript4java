@@ -31632,4 +31632,5 @@ var ts;
         }
     }
 })(ts || (ts = {}));
-ts.executeCommandLine(ts.sys.args);
+// ts.executeCommandLine(ts.sys.args);
+exporter.setExport(ts);
