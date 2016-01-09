@@ -16,7 +16,11 @@ public class TypeScriptCompilerTest {
 		ScriptEngineManager mgr = new ScriptEngineManager();
 		TypeScriptEngine eng = (TypeScriptEngine) mgr.getEngineByExtension("ts");
 		TypeScriptCompiler tsc = eng.getCompiler();
-		String ts = tsc.compile("class Test { name: string }");
-		assertEquals(42.0, ts);
+		String ts = tsc.compile("class Test { name: string }").split("//")[0];
+		assertEquals("var Test = (function () {    function Test() {    }    return Test;})();", strip(ts));
+	}
+
+	private static String strip(String text) {
+		return text.replace('\n' + "", "").replace('\r' + "", "").replace('\t' + "", "").trim();
 	}
 }

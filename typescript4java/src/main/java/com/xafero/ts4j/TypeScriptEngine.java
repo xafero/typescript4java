@@ -39,9 +39,6 @@ public class TypeScriptEngine extends AbstractScriptEngine implements ScriptEngi
 	public String toJavaScript(String script) throws ScriptException {
 		try {
 			String conv = compiler.compile(script);
-
-			System.out.println("## " + conv);
-
 			return conv;
 		} catch (IOException e) {
 			throw new UnsupportedOperationException(e);
@@ -51,9 +48,6 @@ public class TypeScriptEngine extends AbstractScriptEngine implements ScriptEngi
 	public String toJavaScript(Reader reader) throws ScriptException {
 		try {
 			String conv = compiler.compile(reader);
-
-			System.out.println("## " + conv);
-
 			return conv;
 		} catch (IOException e) {
 			throw new UnsupportedOperationException(e);
