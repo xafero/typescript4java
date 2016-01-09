@@ -22,7 +22,7 @@ public class TypeScriptEngineFactory implements ScriptEngineFactory {
 	private static final List<String> MIME_TYPES = Arrays.asList("application/typescript", "text/typescript");
 	private static final List<String> NAMES = Arrays.asList("TypeScript", "typescript");
 	private static final String LANGUAGE_NAME = "TypeScript";
-	private static final String LANGUAGE_VERSION = "1.8.0";
+	private static final String LANGUAGE_VERSION = "1.7.5";
 
 	private ScriptEngineFactory jsFactory;
 

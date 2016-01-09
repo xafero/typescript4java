@@ -5,7 +5,7 @@
 
 	<groupId>com.xafero.ts4j</groupId>
 	<artifactId>typescript4java</artifactId>
-	<version>1.8.0</version>
+	<version>1.7.5</version>
 	<packaging>jar</packaging>
 
 	<name>TypeScript4Java</name>
