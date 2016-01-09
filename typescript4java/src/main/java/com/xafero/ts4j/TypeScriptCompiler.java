@@ -26,6 +26,7 @@ public class TypeScriptCompiler {
 	public static final Gson gson = (new GsonBuilder()).setPrettyPrinting().create();
 	public static final String tsconfig = "tsconfig.json";
 	public static final String libdts = "lib.d.ts";
+	public static final String libcoredts = "lib.core.d.ts";
 	public static final String compiledjs = "compiled.js";
 	public static final String rawTs = "raw.ts";
 
@@ -74,6 +75,7 @@ public class TypeScriptCompiler {
 		engine.eval("ts.sys = mysys");
 		// Inject files
 		sys.push(libdts, getReader(libdts));
+		sys.push(libcoredts, getReader(libcoredts));
 		sys.push(tsconfig, generateTsCfg());
 		sys.push(rawTs, script);
 		// Execute CMD
