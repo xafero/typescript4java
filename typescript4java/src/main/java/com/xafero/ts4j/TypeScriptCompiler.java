@@ -90,6 +90,10 @@ public class TypeScriptCompiler {
 		opts.addProperty("sourceMap", true);
 		opts.addProperty("listFiles", true);
 		opts.addProperty("removeComments", true);
+		opts.addProperty("module", "commonjs");
+		opts.addProperty("target", "es3");
+		opts.addProperty("noImplicitAny", false);
+		opts.addProperty("noLib", true);
 		json.add("compilerOptions", opts);
 		JsonArray array = new JsonArray();
 		array.add(rawTs);
