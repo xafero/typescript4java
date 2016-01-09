@@ -64,7 +64,7 @@ public class TypeScriptEngineFactory implements ScriptEngineFactory {
 	private ScriptEngineFactory findJavaScriptFactory() {
 		ScriptEngineManager mgr = new ScriptEngineManager();
 		for (ScriptEngineFactory sef : mgr.getEngineFactories())
-			if (sef.getLanguageName().equals("javascript"))
+			if (sef.getLanguageName().equals("javascript") || sef.getLanguageName().equals("ECMAScript"))
 				return sef;
 		throw new UnsupportedOperationException("Couldn't find JS engine factory!");
 	}

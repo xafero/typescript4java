@@ -46,10 +46,10 @@
 			<version>2.5</version>
 		</dependency>
 		<!-- JavaScript engine -->
-		<dependency>
-			<groupId>org.dynjs</groupId>
-			<artifactId>dynjs</artifactId>
-			<version>0.3.1</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.dynjs</groupId> -->
+		<!-- <artifactId>dynjs</artifactId> -->
+		<!-- <version>0.3.1</version> -->
+		<!-- </dependency> -->
 	</dependencies>
 </project>
